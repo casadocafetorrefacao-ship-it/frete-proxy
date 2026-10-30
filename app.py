@@ -4,6 +4,9 @@ import requests
 
 # Importa o app e todas as rotas atuais de frete sem alterar server.py.
 from server import app
+from rastreio import rastreio
+
+app.register_blueprint(rastreio)
 
 CONFERENCIA_APPS_SCRIPT = (
     "https://script.google.com/macros/s/"
