@@ -15,13 +15,21 @@ import os
 import sys
 import urllib.request
 
-try:
-    import server as _srv
-except Exception:  # flask pode não estar instalado
-    _srv = None
+import re
 
-ME_TOKEN = os.environ.get('ME_TOKEN') or getattr(_srv, 'ME_TOKEN', '')
-FRENET_TOKEN = os.environ.get('FRENET_TOKEN') or getattr(_srv, 'FRENET_TOKEN', '')
+
+def _const(nome):
+    """Lê a constante de server.py sem importá-lo (evita depender do Flask)."""
+    try:
+        src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'server.py'), encoding='utf-8').read()
+        m = re.search(nome + r"\s*=\s*'([^']+)'", src)
+        return m.group(1) if m else ''
+    except OSError:
+        return ''
+
+
+ME_TOKEN = os.environ.get('ME_TOKEN') or _const('ME_TOKEN')
+FRENET_TOKEN = os.environ.get('FRENET_TOKEN') or _const('FRENET_TOKEN')
 UA = 'CasaDoCafe-Rastreio/1.0'
 HOJE = datetime.datetime.now()
 PARADO_DIAS = 3  # sem movimentação há mais que isso = alerta
