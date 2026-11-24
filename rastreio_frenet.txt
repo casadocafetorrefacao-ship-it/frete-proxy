@@ -1,0 +1,9 @@
+# Códigos Frenet acompanhados pelo rastreio_monitor.py
+# Formato: CODIGO_SERVICO  CODIGO_RASTREIO   # observação
+# Serviços: OPT_1 = Optimus Cargas, 03298 = PAC, 03220 = Sedex, F_3 = Jadlog Package
+# Remova a linha quando o caso estiver resolvido.
+OPT_1 888030987602765  # ticket 32866628 - parado SC desde 18/10
+OPT_1 888030970343463  # ticket 32478432 - insucesso entrega RJ 09/10
+OPT_1 888030979655098  # ticket 32622820 - extravio 27/10
+OPT_1 888030984485407  # devolvido ao remetente 29/10
+OPT_1 888031005809695  # extravio - ressarcido R$ 111,88 em 09/11
