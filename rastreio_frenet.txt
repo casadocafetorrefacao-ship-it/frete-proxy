@@ -1,0 +1,22 @@
+# Códigos Frenet acompanhados pelo rastreio_monitor.py
+# Formato: CODIGO_SERVICO  CODIGO_RASTREIO   # observação
+# Serviços: OPT_1 = Optimus Cargas, 03298 = PAC, 03220 = Sedex, F_3 = Jadlog Package
+# Remova a linha quando o caso estiver resolvido.
+# OPT_1 888030987602765  # ticket 32866628 - parado SC desde 18/10
+# OPT_1 888030970343463  # ticket 32478432 - insucesso entrega RJ 09/10
+# OPT_1 888030979655098  # ticket 32622820 - extravio 27/10
+# OPT_1 888030984485407  # devolvido ao remetente 29/10
+# OPT_1 888031005809695  # extravio - ressarcido R$ 111,88 em 09/11
+# Jadlog em trânsito (CTE dos e-mails "Confirmação de envio Jadlog") - atualizado 26/11/2026
+F_3 10081185779890  # Adinan Santana - Goiânia, EM ROTA 23/11, parado
+F_3 10081185808381  # Paulo E. Scortegagna - CO Passo Fundo desde 24/11
+F_3 10081185810785  # Fabricio Rego - CO Itabuna desde 25/11
+F_3 10081185813553  # Edgar Paz - CO Maringá desde 24/11
+F_3 10081185813505  # Gustavo Cursino Lima - CO Joaçaba 26/11
+F_3 10081185814113  # Fernando Ferreira - CO Diadema 26/11
+F_3 10081185819495  # Marcio J. de Araujo - CO São Carlos 26/11
+F_3 10081185813520  # Flávio Nóbrega - FL Porto Alegre
+F_3 10081185819260  # Rafael Goncalves - transferência
+F_3 10081185819504  # Eliode Junior - hub Perus
+F_3 10081185819462  # Luís Carlos Vieira - hub Perus
+F_3 10081185823146  # Marvin Schneider - hub Perus
